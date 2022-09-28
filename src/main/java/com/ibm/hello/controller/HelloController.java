@@ -50,6 +50,7 @@ public class HelloController {
     ) {
 
         LOGGER.debug("Processing name: " + name);
+        LOGGER.debug("Adding this line to auto trigger the pipeline");
 
         if (StringUtils.isEmpty(name)) {
             return ResponseEntity.status(406).build();
